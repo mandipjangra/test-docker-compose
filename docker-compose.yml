@@ -4,4 +4,3 @@ services:
     my-app:
         container_name: my-app
         image: nginx:latest
-        network_mode: host

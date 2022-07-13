@@ -5,9 +5,9 @@ services:
         container_name: my-app1
         image: nginx:latest
         pid: host
-#     my-app2:
-#         container_name: my-app2
-#         image: nginx:latest
+    my-app2:
+        container_name: my-app2
+        image: nginx:latest
 #         restart: "on-failure:7"
 #     my-app3:
 #         container_name: my-app3

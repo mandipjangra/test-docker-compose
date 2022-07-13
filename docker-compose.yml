@@ -1,6 +1,22 @@
 version: "3"
 
 services:
-    my-app:
+    my-app1:
         container_name: my-app
         image: nginx:latest
+        restart: always
+    my-app2:
+        container_name: my-app
+        image: nginx:latest
+        restart: 
+            condition: on-failure:5
+    my-app3:
+        container_name: my-app
+        image: nginx:latest
+        restart: 
+            condition: on-failure:6
+    my-app4:
+        container_name: my-app
+        image: nginx:latest
+        restart: no
+    

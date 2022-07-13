@@ -4,19 +4,22 @@ services:
     my-app1:
         container_name: my-app
         image: nginx:latest
-        restart: always
+        restart_policy:
+            condition: on-failure
+            max_attempts: 5
+            restart: always
     my-app2:
         container_name: my-app
         image: nginx:latest
-        restart: 
-            condition: on-failure:5
+        restart_policy:
+            condition: on-failure
+            max_attempts: 6
     my-app3:
-        container_name: my-app
-        image: nginx:latest
-        restart: 
-            condition: on-failure:6
+        restart_policy:
+            condition: always
+
     my-app4:
         container_name: my-app
         image: nginx:latest
-        restart: no
-    
+        restart_policy:
+            condition: no    

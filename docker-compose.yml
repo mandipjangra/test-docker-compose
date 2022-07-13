@@ -4,11 +4,11 @@ services:
     my-app1:
         container_name: my-app1
         image: nginx:latest
-        restart: "on-failure:5"
+        restart: "on-failure"
     my-app2:
         container_name: my-app2
         image: nginx:latest
-        restart: "on-failure:7"
+        restart: "on-failure"
     my-app3:
         container_name: my-app3
         image: nginx:latest

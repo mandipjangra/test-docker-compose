@@ -4,7 +4,6 @@ services:
     my-app1:
         container_name: my-app1
         image: nginx:latest
-        ipc: host
 #     my-app2:
 #         container_name: my-app2
 #         image: nginx:latest

@@ -4,6 +4,9 @@ services:
     my-app1:
         container_name: my-app1
         image: nginx:latest
+    my-app2:
+        container_name: my-app2
+        image: ubuntu:latest
 #     my-app2:
 #         container_name: my-app2
 #         image: nginx:latest
